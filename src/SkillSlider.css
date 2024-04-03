@@ -1,0 +1,73 @@
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: transparent;
+    background-image: url('./Pictures/me1.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skills-description {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.skills-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    overflow-y: auto; /* Enable vertical scrolling within the grid */
+    max-height: 60vh;
+    padding-bottom: 20px; /* Padding to avoid cutting off */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 300px;
+}
+.skills-grid-container::-webkit-scrollbar {
+    display: none;
+}
+
+.skill-card {
+    background: #fff; /* Card background */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners for the card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Shadow to create a floating effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.skill-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.skill-name {
+    margin-bottom: 10px;
+    color: #333; /* Adjust the color as needed */
+    font-weight: 600;
+}
+
+.progress-bar-container {
+    background-color: #eaeaea;
+    border-radius: 25px; /* Smooth curves for the progress bar container */
+    overflow: hidden; /* Ensures the progress bar respects the container's rounded corners */
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: black; /* Adjust the color as needed */
+    border-radius: 25px; /* Smooth curves for the progress bar itself */
+    transition: width 3s ease-out; /* Animation for the progress bar width */
+    width: 0;
+}
+
+.skill-percent {
+    display: block;
+    margin-top: 10px;
+    font-weight: 700; /* Bold font for the percentage */
+}
